@@ -29,6 +29,7 @@ defmodule CustomMetaTagsWeb do
   def view do
     quote do
       use Phoenix.View, root: "lib/custom_meta_tags_web/templates",
+                        pattern: "**/*",
                         namespace: CustomMetaTagsWeb
 
       # Import convenience functions from controllers

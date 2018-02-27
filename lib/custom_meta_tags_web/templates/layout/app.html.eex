@@ -7,7 +7,9 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello CustomMetaTags!</title>
+    <%= render_existing(@view_module, "meta/meta." <> @view_template, assigns) ||
+        render(CustomMetaTagsWeb.LayoutView, "meta.html", assigns) %>
+
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
