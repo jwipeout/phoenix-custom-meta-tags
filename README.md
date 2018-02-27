@@ -28,7 +28,7 @@ end
 
 ## Update layout file to use default meta tags
 
-```html
+```elixir
 <!-- templates/layout/app.html.eex -->
 
 <head>
@@ -58,7 +58,7 @@ end
 Override the default meta tags by creating a meta subdirectory and placing files that correspond to the template.
 
 ```html
-<!-- templates/page/meta.about.html.eex -->
+<!-- templates/page/meta/meta.about.html.eex -->
 
 <title>About title</title>
 ```
